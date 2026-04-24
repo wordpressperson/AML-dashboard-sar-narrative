@@ -77,7 +77,7 @@ if page == "Dashboard":
     with col3:
         st.metric("AML Entities", f"{len(customers_df):,}" if not customers_df.empty else "10,108")
     with col4:
-        st.metric("Amount Transacted", "$36.19B", "↑ 8%")
+        st.metric("Amount Transacted", "GH₵36.19B", "↑ 8%")
 
     # Main layout mirroring your images
     left_col, center_col, right_col = st.columns([1.2, 2.5, 1.2])
@@ -121,8 +121,8 @@ if page == "Dashboard":
     with tab1:
         st.subheader("Unusual Transaction Alerts")
         alert_examples = [
-            {"icon": "⚠️", "text": "Client Johnson did more than 10 transactions at same time a day totaling $550,000"},
-            {"icon": "⚠️", "text": "Client Martha did more than 25 transactions in same month totaling $2,550,000"}
+            {"icon": "⚠️", "text": "Client Johnson did more than 10 transactions at same time a day totaling GH₵550,000"},
+            {"icon": "⚠️", "text": "Client Martha did more than 25 transactions in same month totaling GH₵2,550,000"}
         ]
         for alert in alert_examples:
             st.markdown(f"""
