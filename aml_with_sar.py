@@ -77,7 +77,7 @@ if page == "Dashboard":
     with col3:
         st.metric("AML Entities", f"{len(customers_df):,}" if not customers_df.empty else "10,108")
     with col4:
-        st.metric("Amount Transacted", "GH₵36.19B", "↑ 8%")
+        st.metric("Amount Transacted", "₵36.19B", "↑ 8%")
 
     # Main layout mirroring your images
     left_col, center_col, right_col = st.columns([1.2, 2.5, 1.2])
